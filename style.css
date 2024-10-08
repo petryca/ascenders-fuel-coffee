@@ -11,9 +11,43 @@
     --white: #FFFFFF;
 }
 
+@media (width > 700px) {
+    :root {
+        font-size: 18px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+p {
+    line-height: 1.6;
+    color: var(--secondary-color-light);
 }
