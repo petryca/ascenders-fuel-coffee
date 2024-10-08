@@ -51,3 +51,16 @@ p {
     line-height: 1.6;
     color: var(--secondary-color-light);
 }
+
+nav {
+
+}
+
+nav img {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    padding: 16px 26px;
+}
