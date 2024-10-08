@@ -63,4 +63,23 @@ nav img {
 
 .button {
     padding: 16px 26px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    color: var(--white);
+    display: block;
+    transition: all 0.3s;
+}
+
+.button.blue {
+    background-color: var(--secondary-color-light);
+}
+
+.button.blue:hover {
+    background-color: var(--secondary-color);
 }
