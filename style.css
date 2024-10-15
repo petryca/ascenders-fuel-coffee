@@ -3,18 +3,13 @@
 :root {
     font-family: Barlow, sans-serif !important;
     font-size: 16px;
+    line-height: 1.625;
     --primary-color: #F16718;
     --primary-color-light: #FF9B62;
     --secondary-color: #162542;
     --secondary-color-light: #7B8BAD;
     --grey: #E8EFF2;
     --white: #FFFFFF;
-}
-
-@media (width > 700px) {
-    :root {
-        font-size: 18px;
-    }
 }
 
 * {
@@ -25,57 +20,51 @@
 }
 
 body {
-    min-height: 100vh;
-    color: var(--secondary-color);
+    color: var(--secondary-color-light);
     padding-top: 24px;
-}
-
-@media (width > 700px) {
-    body {
-        padding-top: 40px;
-    }
+    display: grid;
+    gap: 30px;
 }
 
 h1, h2, h3 {
     text-transform: uppercase;
+    color: var(--secondary-color);
     font-weight: 900;
-    line-height: 1.1;
 }
 
 h1 {
     font-size: 3.5rem;
+    line-height: 1;
+    letter-spacing: -0.05rem;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 2rem;
+    line-height: 1.125;
 }
 
 h3 {
-    font-size: 1.75rem;
-}
-
-p {
-    line-height: 1.6;
-    color: var(--secondary-color-light);
+    font-size: 1.5rem;
+    line-height: 1.75;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
-    padding: 0 24px;
-    margin: auto;
+    margin-inline: 24px;
 }
 
-nav img {
+.logo {
     width: 50px;
     height: 50px;
+    display: block;
 }
 
 img.responsive {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .button {
@@ -115,21 +104,44 @@ img.responsive {
 }
 
 .left-col {
+    grid-column: 1 / 2;
     background-color: var(--grey);
     height: 240px;
-}
-
-.mid-col {
-
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .right-col {
+    grid-column: 3 / 4;
     background-color: var(--grey);
     height: 240px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
-@media (width > 1200px) {
+.hero {
+    grid-column: 2 / 3;
+}
+
+@media (width > 700px) {
+    body {
+        padding-top: 40px;
+    }
+
+    nav {
+        margin-inline: 40px;
+    }
+
+}
+
+@media (width > 1280px) {
+    nav {
+        width: 1220px;
+        margin-inline: 30px;
+        justify-self: center;
+    }
+
     .main-grid {
-        grid-template-columns: 1fr min(1200px) 1fr;
+        grid-template-columns: 1fr 1280px 1fr;
     }
 }
