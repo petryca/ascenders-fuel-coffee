@@ -128,6 +128,10 @@ img.responsive {
 
 .hero>div:first-child {
     margin-right: 24px;
+    display: grid;
+    gap: 30px;
+    justify-items: left;
+    align-self: center;
 }
 
 .hero>div:last-child {
