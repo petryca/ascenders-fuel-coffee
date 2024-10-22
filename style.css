@@ -149,7 +149,14 @@ img.responsive {
 
     .hero {
         grid-template-columns: 2fr 3fr;
+        margin-left: 40px;
     }
+
+    .hero>div:first-child,
+    .hero>div:last-child {
+        margin: 0;
+    }
+
 }
 
 @media (width > 1280px) {
@@ -161,5 +168,13 @@ img.responsive {
 
     .main-grid {
         grid-template-columns: 1fr 1280px 1fr;
+    }
+
+    .hero {
+        margin-inline: 30px;
+    }
+
+    .hero>div:last-child {
+        border-radius: 20px;
     }
 }
