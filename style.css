@@ -121,6 +121,21 @@ img.responsive {
 
 .hero {
     grid-column: 2 / 3;
+    display: grid;
+    gap: 30px;
+    margin-left: 24px;
+}
+
+.hero>div:first-child {
+    margin-right: 24px;
+}
+
+.hero>div:last-child {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+    min-height: 300px;
+    max-height: 450px;
 }
 
 @media (width > 700px) {
@@ -132,6 +147,9 @@ img.responsive {
         margin-inline: 40px;
     }
 
+    .hero {
+        grid-template-columns: 2fr 3fr;
+    }
 }
 
 @media (width > 1280px) {
