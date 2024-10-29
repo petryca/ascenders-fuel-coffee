@@ -161,6 +161,11 @@ img.responsive {
 .content>div:nth-child(1) {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    background-color: var(--primary-color);
+}
+
+.content>div:nth-child(1) img {
+    mix-blend-mode: multiply;
 }
 
 .content>div:nth-child(2) {
@@ -191,6 +196,11 @@ img.responsive {
     width: 100px;
     height: 100px;
     justify-self: center;
+}
+
+footer {
+    text-align: center;
+    margin: 30px 40px 0 40px;
 }
 
 @media (width > 700px) {
