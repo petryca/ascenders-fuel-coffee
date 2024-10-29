@@ -175,6 +175,24 @@ img.responsive {
     gap: 30px;
 }
 
+.icons {
+    margin-inline: 24px;
+    display: grid;
+    gap: 30px;
+}
+
+.icons>div {
+    text-align: center;
+    display: grid;
+    gap: 24px;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+}
+
 @media (width > 700px) {
     body {
         padding-block: 40px;
@@ -209,6 +227,18 @@ img.responsive {
     .content>div:nth-child(3) {
         grid-template-columns: 1fr 2fr;
     }
+
+    .icons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .icons>div {
+        text-align: left;
+    }
+
+    .icons img {
+        justify-self: start;
+    } 
 
 }
 
