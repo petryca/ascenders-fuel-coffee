@@ -230,6 +230,7 @@ img.responsive {
 
     .icons {
         grid-template-columns: 1fr 1fr;
+        margin-inline: 40px;
     }
 
     .icons>div {
@@ -281,5 +282,11 @@ img.responsive {
         grid-column: 4 / 5;
         grid-template-columns: 1fr;
         align-content: center;
+    }
+
+    .icons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 1220px;
+        justify-self: center;
     }
 }
